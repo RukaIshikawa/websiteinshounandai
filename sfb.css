@@ -1,0 +1,353 @@
+@charset "utf-8";
+*{
+    margin:0px;
+    padding:0px;
+}
+header{
+    width:100%;
+    height:200px;
+    display:flex;
+    padding:0px;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    background-color:white;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+.header-logo{
+    width:auto;
+    height:200px;
+    padding-top:25px;
+    margin-left:50px;
+    object-fit:contain;
+}
+.header-ul{
+    display:flex;
+   margin-right:200px;
+    flex-wrap: nowrap; 
+}
+.header-ul li{
+    list-style:none;
+    margin-left:5%;
+    margin-top:90px;
+}
+.header-ul li a{
+    text-decoration:none;
+    font-size:30px;
+    color:#9B3F69;
+}
+.insta{
+    width:40px;
+}
+.insta2{
+    display:none;
+}
+.hamburger-menu {
+    width:50px;
+    height: 50px;
+    position: relative;
+    border: none;
+    background: transparent;
+    appearance: none;
+    padding: 0;
+    cursor: pointer;
+    display:none;
+    top:30px;
+    margin-left:50%;
+    margin-right:100px;
+}
+.hamburger-menu__bar {
+    display: inline-block;
+    width: 44%;
+    height: 2px;
+    background: #242424;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+.hamburger-menu__bar:first-child {
+    top: 16px;
+}
+.hamburger-menu__bar:nth-child(2) {
+    top: 24px;
+}
+.hamburger-menu__bar:last-child {
+    top: 32px;
+}
+.hamburger-menu--open .hamburger-menu__bar {
+    top: 50%;
+}
+.hamburger-menu--open .hamburger-menu__bar:first-child {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.hamburger-menu--open .hamburger-menu__bar:last-child {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
+    display: none;
+} 
+.navigation {
+    display: none;
+    background: white;
+    position: absolute;
+    top: 170px;
+    left:0px;
+    border:#242424;
+    width: 100%;
+    z-index: 9999;
+}
+.navigation__list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navigation__list-item {
+    border-bottom: solid 1px #9B3F69;
+}
+.navigation__list-item:first-child {
+    border-top: solid 1px #9B3F69;
+}
+.navigation__link {
+    color: #9B3F69;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    padding: 50px 0;
+    transition: .5s;
+}
+@media (hover: hover) and (pointer: fine) {
+    .navigation__link:hover {
+      background: #C7D9D2;
+    }
+}
+.top{
+    width:100%;
+    margin-top:250px;
+}
+.top-img {
+    width:80%;
+    margin-top:30px;
+    margin-bottom:100px;
+    margin-left:10%;
+    margin-right:10%;
+    border-radius:10px;
+
+}
+.top-h2{
+    margin-left:40%;
+    margin-top:-170px;
+    font-size:50px; 
+    position:absolute;
+    color:#9B3F69;  
+
+}
+/*.concept {
+    width:100%;
+    height:400px;
+    background-color:#C7D9D2;
+}
+.concept-img{
+    display:flex;
+}*/
+.menu{
+    background-color:#C7D9D2;
+    width:100%;
+    padding-bottom:30px;
+}
+.menu-h1{
+    padding-top:50px;
+    padding-left:10%;
+    color:#9B3F69;
+}
+.paper{
+    display:flex;
+    width:100%;
+}
+.paper-img{
+    width:30%;
+    padding-left:10%;
+    height:20%;
+}
+.paper-p{
+    width:30%;
+    padding-top:5%;
+    padding-left:10%;
+    font-size:35px;
+    color:#9B3F69;
+}
+.gakupasu{
+    display:flex;
+    width:100%;
+}
+.gakupasu-p{
+    width:40%;
+    margin-top:50px;
+    margin-left:9%;
+    font-size:35px;
+    color:#9B3F69;
+}
+.gakupasu-img{
+    width:40%;
+    padding-left:5%;
+    padding-right:5%;
+}
+.access{
+    width:100%;
+    background-color:white;
+    margin-bottom:30px;
+}
+.access-h1{
+    padding-left:10%;
+    color:#9B3F69;
+    padding-top:50px;
+}
+.access-p{
+    text-align:center;
+    margin:40px auto;
+    font-size:40px;
+    color:#9B3F69;
+    width:73%;
+}
+.access div{
+    display:flex;
+}
+.access div iframe{
+    padding-left:5%;
+}
+.access div img{
+    padding-left:10%;
+    width:40%;
+}
+footer{ 
+    width:1366p;
+    height:200px;
+    background-color:#C7D9D2;
+    display:flex;
+    flex-direction:column;
+}
+.footer-logo{
+    width:200px;
+    margin:0 auto;
+    object-fit: contain;
+}
+.footer-copy{
+    text-align:center;
+    color:#9B3F69;
+}
+
+@media (max-width:1000px){
+    header{
+        height:170px;
+    }
+    .header-logo{
+        height:170px;
+    }
+    .header-ul{
+        margin-left:5%;
+    }
+    .header-ul li{
+        font-size:25px;
+    }
+    .top{
+        margin-top:170px;
+    }
+    .top-h2{
+        font-size:40px;
+    }
+    .paper-p{
+        font-size:20px;
+        padding-left:20%;
+        padding-top:5%;
+    }
+    .gakupasu-p{
+        font-size:20px;
+        margin-left:20%;
+    }
+    .access-p{
+        font-size:20px;
+    }
+    footer{
+        height:180px;
+    }
+}
+@media (max-width:670px){
+    .header-logo{
+        height: 130px;
+        padding:30px 0px 0px;
+        margin:0px;
+    }
+    .header-ul{
+        display:none;
+    } 
+    .hamburger-menu{
+        display:block;
+        margin-top:40px;
+        margin-left:40%;
+    }
+    .insta2{
+        display:block;
+        margin-top:-15px;
+    }
+    .top-h2{
+        font-size:30px;
+        margin-top:-130px;
+        margin-left:30%;
+    }
+    .top-img{
+        width:100%;
+        margin-left:0px;
+        margin-right:0px;
+        margin-bottom:80px;
+    }
+    .paper{
+        margin-top:20px;
+        flex-direction:column;
+    }
+    .paper-img{
+        width:60%;
+        padding-left:20%;
+        padding-right:20%;
+    }
+    .paper-p{
+        padding-left:0px;
+        margin:10px auto;
+        text-align:center;
+        width:80%;
+    }
+    .gakupasu{
+        flex-direction:column-reverse;
+    }
+    .gakupasu-img{
+        width:60%;
+        padding-left:0px;
+        margin:0px auto;
+    }
+    .gakupasu-p{
+        width:80%;
+        text-align:left;
+        margin:10% 10%;
+    }
+    .access-p{
+        font-size:18px;
+        width:90%;
+    }
+    .access div{
+        flex-direction:column-reverse;
+    }
+    .access div img{
+        width:80%;
+        margin-top:30px;
+        padding-left:10%;
+    }
+    .access div iframe{
+        width:80%;
+        margin-top:30px;
+        padding-left:10%;
+        height:300px;
+    }
+
+}
